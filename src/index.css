@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "proxima-nova", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* CUSTOM CLASSES  */
+.paginateArrow {
+  @apply py-[18px] px-2 font-bold min-h-[34px] text-arrowColor hidden md:block hover:text-paginatorPagesColorH hover:fill-black;
+}
+.paginatePages {
+  @apply py-[15.5px] px-3 font-extrabold box-border border-b-4 border-transparent text-paginatorPagesColor bg-white hover:bg-gray-50 hover:text-paginatorPagesColorH;
+}
+
+.paginatePagesFocus {
+  @apply text-paginatorPagesColorH border-b-4 border-paginatorPagesColorH;
+}
+
+.shadowCard {
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.paginationShadow {
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.mainButton {
+  @apply bg-buttonMainColor text-white p-[18px,30px] text-xs rounded-lg;
+}
+
+.accentButtonBlue {
+  @apply flex justify-end items-center pr-4 bg-buttonAccentBlue text-base text-[#55699E] max-w-[222px] min-w-[122px] h-[49px] md:justify-center md:pr-0;
+  border: 1px solid rgba(85, 105, 158, 0.3);
+  border-radius: 8px;
+}
+
+.accentButtonYellow {
+  @apply flex justify-center items-center w-auto px-4 bg-buttonAccentYellow text-base text-[#988B49] md:w-[222px]  h-[49px];
+  border: 1px solid #ffcf00;
+  border-radius: 8px;
+}
+
+.separator {
+  @apply h-[1px] w-full bg-mainColor opacity-[13.11%];
+}
+
+.returnButton {
+  @apply h-[50px] w-[213px] font-semibold uppercase text-xs text-mainColor bg-[#3845643a] rounded-lg;
+}
+
+.listMarker {
+  @apply bg-[#384564A1] opacity-60;
+}
+
+.supportText {
+  @apply text-[#38415D] opacity-80;
+}
