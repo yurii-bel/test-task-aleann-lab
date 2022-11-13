@@ -57,8 +57,10 @@ export default function textFormatMadness(element: string) {
       return (
         <>
           <li className="flex justify-start items-center space-x-2" key={index}>
-            <span className="listMarker px-[4.5px] py-[4.5px]"></span>
-            <span>{e.textContent}</span>
+            <div className="flex justify-center items-start space-x-2">
+              <span className="listMarker mt-[9px] min-w-[9px] min-h-[9px]"></span>
+              <span>{e.textContent}</span>
+            </div>
           </li>
         </>
       );

@@ -19,9 +19,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      mainText: ["Roboto", "monospace"],
-      // mainHead: ["Rubik", "sans-serif"],
-      // mainText: ["Roboto Mono", "monospace"],
+      mainText: ["Roboto", "normal"],
+      baseText: ["proxima-nova", "sans-serif"],
     },
     screens: {
       ss: "400px",

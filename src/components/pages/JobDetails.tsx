@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Bookmark from "../elementsUI/Bookmark";
 import ShareIcon from "../elementsUI/ShareIcon";
-import BookmarkMobile from "../elementsUI/BookmarkMobile";
 import { AiOutlineStar } from "react-icons/ai";
 import TimeFromDays from "../utils/TimeFromDays";
 import ArrowBtn from "../elementsUI/ArrowBtn";
@@ -141,8 +140,8 @@ const JobDetails = () => {
             </div>
           </div>
           {/* Description text*/}
-          <div className="flex justify-center items-center w-fit font-mainText text-mainColor leading-6 mt-[7px] md:mt-[25px]">
-            <div className="whitespace-pre-line text-lg text-[#38415D] opacity-80">
+          <div className="flex justify-center items-center w-fit text-mainColor leading-6 mt-[7px] md:mt-[25px]">
+            <div className="whitespace-pre-line font-mainText text-lg text-[#38415D] opacity-80">
               {TextFormatMadness(jobPost["description"])}
             </div>
           </div>
@@ -157,13 +156,13 @@ const JobDetails = () => {
                 Additional info
               </h2>
               <div className="separator mt-[9px]"></div>
-              <h4 className="self-start text-lg supportText mt-[15px] mb-[10px]">
+              <h4 className="self-start font-mainText text-lg supportText mt-[15px] mb-[10px]">
                 Employment type
               </h4>
               <div className="flex justify-start items-center space-x-[8px]">
                 {employmentType()}
               </div>
-              <h4 className="self-start text-lg supportText mt-[23px] mb-[10px]">
+              <h4 className="self-start font-mainText text-lg supportText mt-[23px] mb-[10px]">
                 Benefits
               </h4>
               <div className="flex flex-wrap justify-start items-center space-x-[8px]">

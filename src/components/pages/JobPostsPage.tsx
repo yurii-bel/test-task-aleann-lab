@@ -8,7 +8,7 @@ const access_token = process.env.REACT_APP_ACCESS_TOKEN;
 const jobPostsPerPage = 5;
 
 const JobPostsPage = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const [jobPosts, setJobPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -37,8 +37,7 @@ const JobPostsPage = () => {
       setTotalJobPages(Math.ceil(res.data.length / jobPostsPerPage));
       setLoading(false);
     };
-    searchParams.set("page", `${1}`);
-    setSearchParams(searchParams);
+
     fetchJobPosts();
   }, []);
 

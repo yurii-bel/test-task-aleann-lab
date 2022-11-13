@@ -4,9 +4,9 @@ export default function getTimeFromDays(numberOfDays: number) {
   const days = Math.floor((numberOfDays % 365) % 30);
 
   const yearsDisplay =
-    years > 0 ? years + (years == 1 ? " year, " : " years, ") : "";
+    years > 0 ? years + (years === 1 ? " year, " : " years, ") : "";
   const monthsDisplay =
-    months > 0 ? months + (months == 1 ? " month, " : " months, ") : "";
-  const daysDisplay = days > 0 ? days + (days == 1 ? " day" : " days") : "";
+    months > 0 ? months + (months === 1 ? " month, " : " months, ") : "";
+  const daysDisplay = days > 0 ? days + (days === 1 ? " day" : " days") : "";
   return yearsDisplay + monthsDisplay + daysDisplay;
 }
